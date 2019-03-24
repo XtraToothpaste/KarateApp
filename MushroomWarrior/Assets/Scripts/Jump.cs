@@ -25,12 +25,12 @@ public class Jump : MonoBehaviour{
 	public Button jumpButton;
 
 	//Function for jump button
-	/*public void JumpButton(){
+	public void JumpButton(){
 		if(isGrounded){
 			rgbd.AddForce(jumpVector * jumpForce, ForceMode2D.Impulse);
 			isGrounded = false;
 		}
-	}*/
+	}
 
 	void Update(){
 		if(Input.GetKeyDown(KeyCode.UpArrow)){

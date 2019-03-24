@@ -431,7 +431,7 @@ MonoBehaviour:
   jumpVector: {x: 0, y: 0, z: 0}
   jumpForce: 2
   isGrounded: 1
-  jumpButton: {fileID: 0}
+  jumpButton: {fileID: 1509101178}
 --- !u!1 &1049361378
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 1516041071}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
