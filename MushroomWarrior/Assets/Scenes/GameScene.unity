@@ -194,7 +194,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &172896846
+--- !u!1 &255031148
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,22 +202,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 172896849}
-  - component: {fileID: 172896847}
+  - component: {fileID: 255031150}
+  - component: {fileID: 255031149}
   m_Layer: 0
-  m_Name: Jumpscript
+  m_Name: JumpScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &172896847
+--- !u!114 &255031149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172896846}
+  m_GameObject: {fileID: 255031148}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90dbe14aded5cc14197d1daf52d01de4, type: 3}
@@ -227,19 +227,20 @@ MonoBehaviour:
   jumpForce: 2
   isGrounded: 0
   jumpButton: {fileID: 0}
---- !u!4 &172896849
+  jumpCounter: 0
+--- !u!4 &255031150
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172896846}
+  m_GameObject: {fileID: 255031148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.97330326, y: -0.21085392, z: -9.919922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &728737898
 GameObject:
@@ -302,7 +303,7 @@ GameObject:
   - component: {fileID: 935402097}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,8 +431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpVector: {x: 0, y: 0, z: 0}
   jumpForce: 2
-  isGrounded: 1
-  jumpButton: {fileID: 1509101178}
+  isGrounded: 0
+  jumpButton: {fileID: 0}
+  jumpCounter: 0
 --- !u!1 &1049361378
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +669,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 356.99, y: 152.6}
+  m_SizeDelta: {x: 333.32, y: 152.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509101178
 MonoBehaviour:
@@ -687,12 +689,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.9339623, g: 0.2599235, b: 0.2599235, a: 1}
+    m_PressedColor: {r: 0.9333334, g: 0.25882354, b: 0.25882354, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -709,7 +711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 172896847}
+      - m_Target: {fileID: 255031149}
         m_MethodName: JumpButton
         m_Mode: 1
         m_Arguments:
@@ -843,7 +845,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1516041071
 BoxCollider2D:
@@ -1071,7 +1073,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!50 &2047516340
 Rigidbody2D:
