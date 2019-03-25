@@ -10,7 +10,6 @@ public class Jump : MonoBehaviour{
 	public bool isGrounded;
 	Rigidbody2D rgbd;
     public Button jumpButton;
-
     public int jumpCounter = 0;
 
     public void JumpButton(){
