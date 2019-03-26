@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Jump : MonoBehaviour{
 
 	public Vector3 jumpVector;
-	public float jumpForce = 2.0f;
+	public float jumpForce = 4.0f;
 	public bool isGrounded;
 	Rigidbody2D rgbd;
     public Button jumpButton;
